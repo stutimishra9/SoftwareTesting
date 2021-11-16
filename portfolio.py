@@ -17,6 +17,9 @@ class Portfolio:
         """Buy shares at a certain price."""
         self.stocks.append([name, shares, price])
  
+        self._stocks=[]
+    def buy(self,name,shares,price):
+        self._stocks.append((name,shares,price))
     def cost(self):
         """What was the total cost of this portfolio?"""
         amt = 0.0
